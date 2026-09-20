@@ -1,0 +1,72 @@
+@use '../styles/variables' as *;
+
+.developer-cta {
+  display: flex;
+  align-items: center;
+  gap: $size-5;
+  padding: $size-5 $size-15;
+  background-color: $color-bg;
+
+  &__image {
+    width: 680px;
+    height: 480px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: $corner-extra-large;
+  }
+
+  &__card {
+    display: flex;
+    min-width: 0;
+    height: 344px;
+    flex: 1;
+    flex-direction: column;
+    gap: $size-3;
+    justify-content: center;
+    padding: $size-5;
+    background-color: $color-white;
+    border: $border-width-medium solid $color-on-primary;
+    border-radius: $size-3;
+    box-shadow:
+            0 14px 30px -10px rgb(0 0 0 / 7.84%),
+            0 2px 8px -4px rgb(0 0 0 / 3.92%);
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $font-family-primary;
+    font-size: $font-headline-large;
+    font-weight: $font-weight-bold;
+    line-height: 100%;
+    color: $color-on-primary;
+  }
+
+  &__description {
+    max-width: 720px;
+    margin: 0;
+    font-family: $font-family-primary;
+    font-size: $font-body-medium;
+    line-height: 1.4;
+    color: $color-on-bg;
+  }
+
+  &__button {
+    width: fit-content;
+    padding: 10px 20px;
+    font-family: $font-family-primary;
+    font-size: $font-label-large;
+    font-weight: $font-weight-bold;
+    color: $color-on-primary;
+    background-color: $color-primary;
+    border: $border-width-medium solid $color-on-primary;
+    border-radius: $corner-small;
+    cursor: pointer;
+  }
+
+  &__contact {
+    margin: 0;
+    font-family: $font-family-primary;
+    font-size: $font-label-small;
+    color: $color-on-bg-low;
+  }
+}

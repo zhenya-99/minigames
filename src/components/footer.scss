@@ -1,0 +1,80 @@
+@use '../styles/variables' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: $size-8;
+  padding: $size-5 $size-15;
+  background-color: $color-bg-footer;
+  color: $color-on-bg-footer;
+
+  &__top {
+    display: flex;
+    height: 151px;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    gap: $size-3;
+  }
+
+  &__logo {
+    font-family: $font-family-primary;
+    font-size: $font-body-large;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &__description {
+    margin: 0;
+    font-family: $font-family-primary;
+    font-size: $font-body-small;
+    color: $color-on-bg-footer;
+  }
+
+  &__navigation {
+    display: flex;
+    gap: $size-10;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: $size-2;
+  }
+
+  &__column-title {
+    margin: 0;
+    font-family: $font-family-primary;
+    font-size: $font-label-large;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+  }
+
+  &__column-list {
+    display: flex;
+    flex-direction: column;
+    gap: $size-1;
+  }
+
+  &__link {
+    font-family: $font-family-primary;
+    font-size: $font-body-small;
+    color: $color-on-bg-footer;
+    text-decoration: none;
+  }
+
+  &__bottom {
+    display: flex;
+    height: $size-6;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-family-primary;
+    font-size: $font-body-small;
+    color: $color-on-bg-footer;
+  }
+}

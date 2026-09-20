@@ -1,0 +1,100 @@
+@use '../styles/variables' as *;
+
+.top-players {
+  display: flex;
+  flex-direction: column;
+  gap: $size-5;
+  padding: $size-5 $size-15;
+  background-color: $color-bg;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: $size-1;
+  }
+
+  &__accent {
+    width: $size-1;
+    height: $size-4;
+    flex-shrink: 0;
+    background-color: $color-primary;
+    border: $border-width-small solid $color-on-primary;
+    border-radius: $corner-extra-small;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-on-primary;
+    font-family: $font-family-primary;
+    font-size: $font-headline-large;
+    font-weight: $font-weight-bold;
+    line-height: 100%;
+  }
+
+  &__table {
+    overflow: hidden;
+    border: $border-width-medium solid $color-on-primary;
+    border-radius: $corner-large;
+  }
+
+  &__table-header,
+  &__row {
+    display: grid;
+    grid-template-columns: 120px 1.4fr repeat(4, 1fr);
+    align-items: center;
+    padding: $size-2 $size-3;
+    gap: $size-2;
+    font-family: $font-family-primary;
+  }
+
+  &__table-header {
+    background-color: $color-tertiary;
+    color: $color-white;
+    font-size: $font-label-medium;
+    font-weight: $font-weight-bold;
+  }
+
+  &__row {
+    min-height: 72px;
+    background-color: $color-bg;
+    border-bottom: 1px solid $color-outline;
+    color: $color-on-primary;
+    font-size: $font-body-medium;
+    font-weight: $font-weight-medium;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__rank {
+    font-weight: $font-weight-bold;
+  }
+
+  &__player {
+    display: flex;
+    align-items: center;
+    gap: $size-2;
+    font-weight: $font-weight-bold;
+  }
+
+  &__avatar {
+    display: flex;
+    width: $size-5;
+    height: $size-5;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-on-primary;
+    border-radius: $corner-full;
+    font-size: $font-label-medium;
+  }
+
+  &__game {
+    width: fit-content;
+    padding: $size-05 $size-1;
+    border: 1px solid $color-on-primary;
+    border-radius: $corner-full;
+    font-size: $font-label-small;
+    font-weight: $font-weight-bold;
+  }
+}

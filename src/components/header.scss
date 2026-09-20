@@ -1,0 +1,83 @@
+@use '../styles/variables' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $size-3 $size-10;
+  background-color: $color-bg;
+  border-bottom: 2px solid $color-on-primary;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: $size-1;
+    color: $color-on-primary;
+    text-decoration: none;
+  }
+
+  &__logo-icon {
+    width: $size-4;
+    height: $size-4;
+  }
+
+  &__logo-text {
+    font-family: $font-family-primary;
+    font-size: $font-headline-medium;
+    font-weight: $font-weight-bold;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: $size-5;
+  }
+
+  &__link {
+    font-family: $font-family-primary;
+    font-weight: $font-weight-medium;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: $color-on-bg;
+    text-decoration: none;
+
+    &:first-child {
+      font-weight: $font-weight-bold;
+      color: $color-on-primary;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $size-2;
+  }
+
+  &__login,
+  &__signup {
+    padding: 10px 20px;
+    border: 2px solid $color-on-primary;
+    border-radius: $corner-small;
+    font-family: $font-family-primary;
+    font-size: $font-label-large;
+    font-weight: $font-weight-bold;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: $color-on-primary;
+    cursor: pointer;
+  }
+
+  &__login {
+    background-color: transparent;
+  }
+
+  &__signup {
+    background-color: $color-primary;
+  }
+
+  &__menu {
+    display: none;
+  }
+}
