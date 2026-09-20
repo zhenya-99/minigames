@@ -6,7 +6,7 @@ export const createHeader = (): HTMLElement => {
 
     const logo = document.createElement('a');
     logo.className = 'header__logo';
-    logo.href = '/';
+    logo.href = '/minigames/';
 
     const logoImage = document.createElement('img');
     logoImage.src = '/minigames/images/logo.svg';

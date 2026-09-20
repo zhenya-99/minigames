@@ -12,7 +12,7 @@ export const createFooter = (): HTMLElement => {
 
     const logo = document.createElement('a');
     logo.className = 'footer__logo';
-    logo.href = '/';
+    logo.href = '/minigames/';
     logo.textContent = 'MiniGames';
 
     const description = document.createElement('p');
