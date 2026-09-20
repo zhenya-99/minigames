@@ -150,3 +150,21 @@
     white-space: nowrap;
   }
 }
+
+@media (max-width: $breakpoint-tablet) {
+  .new-games {
+    padding: $size-3 $size-5;
+    gap: $size-3;
+  }
+
+  .new-games__header {
+    width: 100%;
+  }
+
+  .new-games__track {
+    width: 100%;
+    height: $new-games-track-tablet-height;
+    padding-right: $size-1;
+    padding-left: $size-1;
+  }
+}

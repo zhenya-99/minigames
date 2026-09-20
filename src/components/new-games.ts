@@ -129,3 +129,4 @@ export const createNewGames = (): HTMLElement => {
 
     return section;
 };
+

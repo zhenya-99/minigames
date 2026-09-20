@@ -61,3 +61,22 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: $breakpoint-tablet) {
+  .hero {
+    padding: $size-9 $size-5;
+  }
+
+  .hero__content {
+    width: $hero-tablet-content-width;
+    padding: $size-3;
+    gap: $size-2;
+    border-radius: $corner-large;
+    border-width: $border-width-hero;
+    box-shadow:
+            $shadow-level-2-offset
+            $shadow-level-2-offset
+            0
+            $color-on-primary;
+  }
+}

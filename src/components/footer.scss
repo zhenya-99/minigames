@@ -3,42 +3,41 @@
 .footer {
   display: flex;
   flex-direction: column;
-  gap: $size-8;
-  padding: $size-5 $size-15;
+  gap: $size-5;
+  padding: $size-5;
   background-color: $color-bg-footer;
   color: $color-on-bg-footer;
 
   &__top {
     display: flex;
-    height: 151px;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: $size-3;
   }
 
   &__info {
     display: flex;
-    width: 400px;
     flex-direction: column;
     gap: $size-3;
   }
 
   &__logo {
+    color: $color-white;
     font-family: $font-family-primary;
     font-size: $font-body-large;
     font-weight: $font-weight-bold;
-    color: $color-white;
     text-decoration: none;
   }
 
   &__description {
     margin: 0;
+    color: $color-on-bg-footer;
     font-family: $font-family-primary;
     font-size: $font-body-small;
-    color: $color-on-bg-footer;
   }
 
   &__navigation {
     display: flex;
-    gap: $size-10;
+    justify-content: space-between;
   }
 
   &__column {
@@ -49,10 +48,10 @@
 
   &__column-title {
     margin: 0;
+    color: $color-white;
     font-family: $font-family-primary;
     font-size: $font-label-large;
     font-weight: $font-weight-bold;
-    color: $color-white;
   }
 
   &__column-list {
@@ -62,17 +61,16 @@
   }
 
   &__link {
+    color: $color-on-bg-footer;
     font-family: $font-family-primary;
     font-size: $font-body-small;
-    color: $color-on-bg-footer;
     text-decoration: none;
   }
 
   &__bottom {
     display: flex;
-    height: $size-6;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: $size-2;
     font-family: $font-family-primary;
     font-size: $font-body-small;
     color: $color-on-bg-footer;

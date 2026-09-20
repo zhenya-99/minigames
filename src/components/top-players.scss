@@ -1,4 +1,5 @@
 @use '../styles/variables' as *;
+@use '../styles/mixins' as *;
 
 .top-players {
   display: flex;
@@ -96,5 +97,65 @@
     border-radius: $corner-full;
     font-size: $font-label-small;
     font-weight: $font-weight-bold;
+  }
+}
+
+@include tablet {
+  .top-players {
+    gap: $size-3;
+    padding: $size-3 $size-5;
+
+    &__heading {
+      gap: $size-1;
+    }
+
+    &__title {
+      font-size: $font-headline-medium;
+    }
+
+    &__accent {
+      width: $size-05;
+      height: $size-3;
+    }
+
+    &__table {
+      border-radius: $corner-large;
+      box-shadow: 4px 4px 0 $color-on-primary;
+    }
+
+    &__table-header,
+    &__row {
+      grid-template-columns: 48px 1.5fr 80px 90px 80px 100px;
+      gap: $size-1;
+      padding: $size-1 $size-2;
+    }
+
+    &__table-header {
+      font-size: $font-label-small;
+    }
+
+    &__row {
+      min-height: 56px;
+      font-size: $font-body-small;
+
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
+
+    &__player {
+      gap: $size-1;
+    }
+
+    &__avatar {
+      width: $size-4;
+      height: $size-4;
+      font-size: $font-label-small;
+    }
+
+    &__game {
+      padding: $size-05 $size-1;
+      font-size: $font-label-small;
+    }
   }
 }

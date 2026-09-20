@@ -54,7 +54,7 @@ export const createFooter = (): HTMLElement => {
     school.textContent = 'RS School';
 
     const github = document.createElement('span');
-    github.textContent = '@student-nickname';
+    github.textContent = '@zhenya-99';
 
     const love = document.createElement('span');
     love.textContent = 'Designed with love';
