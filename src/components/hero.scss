@@ -1,0 +1,82 @@
+@use '../styles/variables' as *;
+
+.hero {
+  position: relative;
+  display: flex;
+  padding: $size-14 $size-15;
+  background-image:
+          linear-gradient(
+                          rgba(30, 27, 58, 0.65),
+                          rgba(30, 27, 58, 0.65)
+          ),
+          url('/images/hero.png');
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid $color-on-primary;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    padding: $size-6;
+    gap: $size-3;
+    background-color: $color-bg;
+    border: 3px solid $color-on-primary;
+    border-radius: $corner-extra-large;
+    box-shadow: 8px 8px 0 $color-on-primary;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $font-family-primary;
+    font-size: $font-display-large;
+    font-weight: $font-weight-bold;
+    line-height: 110%;
+    letter-spacing: 0;
+    color: $color-on-primary;
+  }
+
+  &__description {
+    margin: 0;
+    font-family: $font-family-primary;
+    font-size: $font-body-large;
+    font-weight: $font-weight-medium;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: $color-on-bg;
+  }
+
+  &__button {
+    align-self: flex-start;
+    padding: $size-2 $size-3;
+    background-color: $color-primary;
+    border: 2px solid $color-on-primary;
+    border-radius: $corner-small;
+    font-family: $font-family-primary;
+    font-size: $font-body-large;
+    font-weight: $font-weight-bold;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: $color-on-primary;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .hero {
+    padding: $size-9 $size-5;
+  }
+
+  .hero__content {
+    width: $hero-tablet-content-width;
+    padding: $size-3;
+    gap: $size-2;
+    border-radius: $corner-large;
+    border-width: $border-width-hero;
+    box-shadow:
+            $shadow-level-2-offset
+            $shadow-level-2-offset
+            0
+            $color-on-primary;
+  }
+}
