@@ -1,0 +1,78 @@
+@use '../styles/variables' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: $size-5;
+  padding: $size-5;
+  background-color: $color-bg-footer;
+  color: $color-on-bg-footer;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: $size-3;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $size-3;
+  }
+
+  &__logo {
+    color: $color-white;
+    font-family: $font-family-primary;
+    font-size: $font-body-large;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+  }
+
+  &__description {
+    margin: 0;
+    color: $color-on-bg-footer;
+    font-family: $font-family-primary;
+    font-size: $font-body-small;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: $size-2;
+  }
+
+  &__column-title {
+    margin: 0;
+    color: $color-white;
+    font-family: $font-family-primary;
+    font-size: $font-label-large;
+    font-weight: $font-weight-bold;
+  }
+
+  &__column-list {
+    display: flex;
+    flex-direction: column;
+    gap: $size-1;
+  }
+
+  &__link {
+    color: $color-on-bg-footer;
+    font-family: $font-family-primary;
+    font-size: $font-body-small;
+    text-decoration: none;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: $size-2;
+    font-family: $font-family-primary;
+    font-size: $font-body-small;
+    color: $color-on-bg-footer;
+  }
+}
