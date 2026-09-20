@@ -6,7 +6,7 @@ export const createDeveloperCta = (): HTMLElement => {
 
     const image = document.createElement('img');
     image.className = 'developer-cta__image';
-    image.src = '/images/illustration-side.png';
+    image.src = '/minigames/images/illustration-side.png';
     image.alt = 'Game developer workspace';
 
     const card = document.createElement('div');

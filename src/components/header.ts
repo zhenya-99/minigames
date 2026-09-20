@@ -9,7 +9,7 @@ export const createHeader = (): HTMLElement => {
     logo.href = '/';
 
     const logoImage = document.createElement('img');
-    logoImage.src = '/images/logo.svg';
+    logoImage.src = '/minigames/images/logo.svg';
     logoImage.alt = 'MiniGames';
 
     const logoText = document.createElement('span');
